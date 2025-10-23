@@ -29,7 +29,6 @@
 
       body {
         font-size: 18px;
-        height: 100%;
       }
 
       .author-info {
@@ -45,29 +44,29 @@
 
 
       .circle-star{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         background-color: #F5C044;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 30px;
+        font-size: 25px;
         background-clip: content-box;
       }
 
 
       .container{
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        padding: 10em;
+        grid-template-columns: 1fr 1fr;
+        padding: 7em 4em;
       }
       .right-cards{
         display: flex; 
         flex-direction: column; 
-        padding-top: 90px; 
-        width: 60%;
-        height: 130%;
+        padding-top: 20px; 
+        width: 20em;
+        height: 20em;
     }
       
 
@@ -75,23 +74,26 @@
     
      
       .left-card{
-        margin: 6em;
-        width: 50%;
+        margin: 1em;
       }
       .left-card h2{
         padding-top: 25px;
-        font-size: 1em;
+        font-size: 2em;
       }
       .left-card p{
         margin-top: 1em;
         margin-bottom: 2em;
-        font-size: 14px;
+        font-size: 1.25em;
         line-height: 1.5em;
       }
-      .checklist{
-        font-size: 12px;
-        line-height: 2em;
+      .checklist > div{
+        font-size: 14px;
+        line-height: 3em;
+        display: flex;
+        gap: 10px;
       }
+
+  
 
 
 
@@ -100,7 +102,7 @@
       .google,
       .meta {
         background: #FFFFFF;
-        padding: 3em;
+        padding: 2em;
         border-radius: 20px;
         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
       }
@@ -109,24 +111,24 @@
       .meta .logo-stars{
         background-color: #FFFFFF;
         display: flex;
-        gap: 10px;
+        gap: 4px;
         padding-bottom: 1em;
 
       }
       .google{
         position: relative;
-        margin-left: 20%; 
+        margin-left: 50%; 
         z-index: 2;
         width: 100%; 
     }
       .google .name {
-        font-family: 20px;
+        font-family: 10px;
         background-color: #FFFFFF;
         font-weight: bold;
       }
       .google .content{
         background-color: #FFFFFF;
-        font-size: 15px;
+        font-size: 14px;
         padding-top: 1em;
         line-height: 1.5em;
       }
@@ -134,9 +136,8 @@
 
 
       .meta{
-        margin-top: 80px; 
+        margin-top: 40px; 
         z-index: 1;
-        width: 100%;
       }
       .meta .name {
         font-family: 20px;
@@ -147,6 +148,7 @@
         background-color: #FFFFFF;
         font-size: 15px;
         padding-top: 1em;
+        line-height: 2em;
       }
       
 
