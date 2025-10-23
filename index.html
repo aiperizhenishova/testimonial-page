@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
     <link
       rel="icon"
       href="resources/favicon.ico"
@@ -19,10 +23,13 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Sora', sans-serif;
+        background-color: #FAFAF9;
       }
 
       body {
-        height: 100vh;
+        font-size: 18px;
+        height: 100%;
       }
 
       .author-info {
@@ -35,70 +42,196 @@
       .author-info a {
         text-decoration: none;
       }
+
+
+      .circle-star{
+        width: 60px;
+        height: 60px;
+        background-color: #F5C044;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        background-clip: content-box;
+      }
+
+
+      .container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 10em;
+      }
+      .right-cards{
+        display: flex; 
+        flex-direction: column; 
+        padding-top: 90px; 
+        width: 60%;
+        height: 130%;
+    }
+      
+
+
+    
+     
+      .left-card{
+        margin: 6em;
+      }
+      .left-card h2{
+        padding-top: 25px;
+        font-size: 3.5em;
+      }
+      .left-card p{
+        margin-top: 1em;
+        margin-bottom: 2em;
+        font-size: 2em;
+        line-height: 1.5em;
+      }
+      .checklist{
+        font-size: 1.6em;
+        line-height: 2em;
+      }
+
+      .left-card{
+        min-width: 220px;
+        min-height: 300px;
+      }
+
+
+
+
+      .google,
+      .meta{
+        min-width: 180px;
+        min-height: 120px;
+      }
+      .google,
+      .meta {
+        background: #FFFFFF;
+        padding: 3em;
+        border-radius: 20px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      }
+
+      .google .logo-stars,
+      .meta .logo-stars{
+        background-color: #FFFFFF;
+        display: flex;
+        gap: 15px;
+        padding-bottom: 2em;
+
+      }
+      .google{
+        position: relative;
+        margin-left: 40%; 
+        z-index: 2;
+        width: 100%; 
+    }
+      .google .name {
+        font-family: 20px;
+        background-color: #FFFFFF;
+        font-weight: bold;
+      }
+      .google .content{
+        background-color: #FFFFFF;
+        font-size: 25px;
+        padding-top: 1em;
+        line-height: 1.5em;
+      }
+
+
+
+      .meta{
+        margin-top: 80px; 
+        z-index: 1;
+        width: 100%;
+      }
+      .meta .name {
+        font-family: 20px;
+        background-color: #FFFFFF;
+        font-weight: bold;
+      }
+      .meta .content{
+        background-color: #FFFFFF;
+        font-size: 25px;
+        padding-top: 1em;
+      }
+      
+
     </style>
   </head>
   <body>
-  ⭐️
+  
 
-  <div class="reviewers">
-    <h2>Reviewers</h2>
-    <p>Reviewers is where people can access guidelines, <br> checklists, and other tools to assist them in reviewing <br>
-       papers or manuscripts. It provides a structured <br> approach to ensure that the review process is <br> 
-       thorough, efficient, and consistent.
-    </p>
+  <div class="container">
+    <div class="left-card">
 
-    <ul class="checklist">
-      <li>
-        <img src="resources\Done_ring_round_fill.svg" alt="">
-        Checklist to Review an Academic Paper
-      </li>
-      <li>
-        <img src="resources\Done_ring_round_fill.svg" alt="">
-        Peer Review Checklist
-      </li>
-      <li>
-        <img src="resources\Done_ring_round_fill.svg" alt="">
-        Checklist for Editors, Reviewers, and Authors of SPIE Journals
-      </li>
-    </ul>
-  </div>
-
-  <div class="cards">
-
-    <article class="meta">
-      <div class="logo-stars">
-        <img src="resources\meta-png.png" alt="meta">
-        <img src="resources\Star_fill.svg" alt="star">
-        <img src="resources\Star_fill.svg" alt="star">
-        <img src="resources\Star_fill.svg" alt="star">
-        <img src="resources\Star_fill.svg" alt="star">
-        <img src="resources\Star_fill.svg" alt="star">
-      </div>
-
-      <p class="name">Rachel Patel</p>
-      <p class="content">I highly recommend the Writecream Business Description </p>
-    </article>
-
-     
-
-    <article class="google">
-      <div class="logo-stars">
-        <img src="resources\google-png.png" alt="google logo">
-        <img src="resources\Star_fill.svg" alt="star">
-        <img src="resources\Star_fill.svg" alt="star">
-        <img src="resources\Star_fill.svg" alt="star">
-        <img src="resources\Star_fill.svg" alt="star">
-        <img src="resources\Star_fill_gray.svg" alt="grey-star">
-      </div>
+      <div class="circle-star">⭐️</div>
       
-      <p class="name">Samantha Lee</p>
-      <p class="content">The checklist ensures that the review process is thorough</p>
-    </article>
+      <h2>Reviewers</h2>
+      <p>Reviewers is where people can access guidelines, <br> checklists, and other tools to assist them in reviewing <br>
+         papers or manuscripts. It provides a structured <br> approach to ensure that the review process is <br> 
+         thorough, efficient, and consistent.
+      </p>
+  
+      <article class="checklist">
+        <div>
+          <img src="resources\Done_ring_round_fill.svg" alt="">
+          Checklist to Review an Academic Paper
+        </div>
+        
+        <div>
+          <img src="resources\Done_ring_round_fill.svg" alt="">
+          Peer Review Checklist
+        </div>
+  
+        <div>
+          <img src="resources\Done_ring_round_fill.svg" alt="">
+          Checklist for Editors, Reviewers, and Authors of SPIE Journals
+        </div>
+      </article>
+  
+    </div>
+  
+
+
+
+    <div class="right-cards">
+
+      <article class="google">
+        <div class="logo-stars">
+          <img src="resources\google-png.png" alt="google logo">
+          <img src="resources\Star_fill.svg" alt="star">
+          <img src="resources\Star_fill.svg" alt="star">
+          <img src="resources\Star_fill.svg" alt="star">
+          <img src="resources\Star_fill.svg" alt="star">
+          <img src="resources\Star_fill_gray.svg" alt="grey-star">
+        </div>
+        
+        <p class="name">Samantha Lee</p>
+        <p class="content">The checklist ensures that the <br> review process is thorough</p>
+      </article>
+  
+      <article class="meta">
+        <div class="logo-stars">
+          <img src="resources\meta-png.png" alt="meta">
+          <img src="resources\Star_fill.svg" alt="star">
+          <img src="resources\Star_fill.svg" alt="star">
+          <img src="resources\Star_fill.svg" alt="star">
+          <img src="resources\Star_fill.svg" alt="star">
+          <img src="resources\Star_fill.svg" alt="star">
+        </div>
+  
+        <p class="name">Rachel Patel</p>
+        <p class="content">I highly recommend the <br> Writecream Business Description </p>
+      </article>
+    </div>
   </div>
+  
 
 
     <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
+      Coded by <a href="#">aiperi</a> | Challenge by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
         >devChallenges.io</a
       >.
